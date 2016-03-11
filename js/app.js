@@ -38,5 +38,5 @@ _.throttle = function(func, wait, options) {
 
 var nav = $('nav.global');
 $(window).scroll(_.throttle(function(){
-  nav.toggleClass('full', $(window).scrollTop() > 200);
+  nav.toggleClass('full', $(window).scrollTop() > 0);
 }, 100));
